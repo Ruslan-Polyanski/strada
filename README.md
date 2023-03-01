@@ -1,2 +1,2 @@
-# strada
+# Strada
 My educational project
