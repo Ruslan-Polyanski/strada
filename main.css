@@ -1,4 +1,33 @@
 p {
     font-size: 16px;
     color: gray;
+    margin-bottom: 20px;
+}
+
+#todo-list {
+    border: 1px solid black;
+    padding: 20px;
+    width: 300px;
+}
+
+#todo {
+    padding-bottom: 10px;
+}
+
+#login-form {
+    text-align: right;
+}
+
+#login-form input  {
+    border: 1px solid green;
+}
+
+tr, td, th {
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+table {
+    border: 1px solid gray;
+    border-spacing: 0;
 }
