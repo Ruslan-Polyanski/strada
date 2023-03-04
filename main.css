@@ -8,6 +8,7 @@ p {
     border: 1px solid black;
     padding: 20px;
     width: 300px;
+    background-color: rgb(231, 219, 219);
 }
 
 #todo {
@@ -30,4 +31,9 @@ tr, td, th {
 table {
     border: 1px solid gray;
     border-spacing: 0;
+}
+
+.item {
+    margin: 0 0 10px 0;
+    font-size: 16px;
 }
