@@ -23,12 +23,33 @@ p {
     border: 1px solid green;
 }
 
-tr, td, th {
+.countries {
+    border: 1px solid black;
+    border-spacing: 0;
+}
+
+.countries th,
+.countries td {
+    border: 1px solid black;
+}
+
+.countries tbody tr:nth-child(2n){
+    background: rgb(240, 213, 213);
+}
+
+.countries tbody tr:hover {
+    cursor: pointer;
+    color: gray;
+}
+
+.food tr,
+.food td,
+.food th {
     border: 1px solid gray;
     padding: 10px;
 }
 
-table {
+.food {
     border: 1px solid gray;
     border-spacing: 0;
 }
