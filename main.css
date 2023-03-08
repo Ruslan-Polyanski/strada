@@ -118,3 +118,36 @@ p {
     cursor: pointer;
     box-shadow: 0px 0px 10px 1px black;
 }
+
+@media (max-width: 900px) {
+    .food {
+        display: none;
+    }
+  }
+
+  @media (max-width: 760px) {
+    .countries {
+        display: none;
+    }
+    .thing__one {
+        flex-basis: 50%;
+    }   
+}
+
+@media (max-width: 480px) {
+    .thing {
+        flex-direction: column;
+    }   
+}
+
+@media (max-width: 390px) {
+    .albums__element {
+        flex-basis: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .albums__descriptions img {
+        grid-area: 1 / 1 / 4 / 2;
+    }
+}
