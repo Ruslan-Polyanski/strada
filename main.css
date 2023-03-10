@@ -134,6 +134,84 @@ p {
     }   
 }
 
+.weather {
+    width: 600px;
+    height: 435px;
+    border: 1px solid #000;
+}
+
+.weather-search__input {
+    width: 100%;
+    height: 45px;
+    border: none;
+    border-bottom: 1px solid #000;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    padding-left: 15px;
+}
+
+.weather-search__input:focus-visible {
+    outline: none;
+}
+
+.weather-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.weather-information {
+    flex-basis: 50%;
+    height: 390px;
+    border-right: 1px solid #000;
+}
+
+.weather-locations {
+    flex-basis: 50%;
+    height: 390px;
+}
+
+.weather-search {
+    position: relative;
+}
+
+.weather-locations__title {
+    width: 302px;
+    height: 68px;
+    border-bottom: 1px solid #000;
+}
+
+.weather-locations {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.weather-locations__title {
+    padding-left: 18px;
+    padding-top: 34px;
+}
+
+.weather-search__button {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.weather-locations__sity ul {
+    list-style-type: none;
+    padding-left: 18px;
+}
+
+.weather-locations__sity ul li {
+    margin-bottom: 16px;
+}
+
 @media (max-width: 480px) {
     .thing {
         flex-direction: column;
