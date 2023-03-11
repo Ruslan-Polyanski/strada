@@ -27,13 +27,85 @@
                 <div class="weather-search">
                     <form id="weather-search__form" action="/" method="get">
                         <input class="weather-search__input" type="text" placeholder="Aktober">
-                        <button class="weather-search__button" type="submit" form="weather-form">
+                        <button class="weather-search__button" type="submit" form="weather-search__form">
                             <i class="weather-search__icon"></i>
                         </button>
                     </form>
                 </div>
                 <div class="weather-content">
-                    <div class="weather-information"></div>
+                    <div class="weather-information">
+                        <input id="first-input" type="radio" name="weather" checked>
+                        <label for="first-input">Now</label><input id="second-input" type="radio" name="weather"><label for="second-input" class="second-input__lable">Details</label><input id="third-input" type="radio" name="weather"><label for="third-input">Forecast</label>
+                        <div class="first-input__box input-box">
+                            <div class="weather-deagre">14<i>&#176;</i></div>
+                            <div class="weather-icon"><i></i></div>
+                            <div class="weather-content">
+                                <div class="weather-content__title">Aktobe</div>
+                                <div class="weather-content__icon"><i></i></div>
+                            </div>
+                        </div>
+                        <div class="second-input__box input-box">
+                            <span class="second-input__title">Aktobe</span>
+                            <ul class="second-input__list">
+                                <li class="second-input__item">Temperature: 14</li>
+                                <li class="second-input__item">Feels like: 10</li>
+                                <li class="second-input__item">Weather: Clouds</li>
+                                <li class="second-input__item">Sunrise: 03:21</li>
+                                <li class="second-input__item">Sunset: 18:54</li>
+                            </ul>
+                        </div>
+                        <div class="third-input__box input-box">
+                            <span class="second-input__title">Aktobe</span>
+                            <div class="third-box">
+                                <div class="third-box__clock">
+                                    <div class="date">17 May</div>
+                                    <div class="clock">12:00</div>
+                                </div>
+                                <div class="third-box__content">
+                                    <div class="box-content">
+                                        <span>Temperature: 13&deg;</span>
+                                        <span>Feels like: 10&deg;</span>
+                                    </div>
+                                    <div class="box-weather">
+                                        <span class="box-weather__title">Rain</span>
+                                        <i class="box-weather__icon"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="third-box">
+                                <div class="third-box__clock">
+                                    <div class="date">17 May</div>
+                                    <div class="clock">12:00</div>
+                                </div>
+                                <div class="third-box__content">
+                                    <div class="box-content">
+                                        <span>Temperature: 13&deg;</span>
+                                        <span>Feels like: 10&deg;</span>
+                                    </div>
+                                    <div class="box-weather">
+                                        <span class="box-weather__title">Rain</span>
+                                        <i class="box-weather__icon"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="third-box">
+                                <div class="third-box__clock">
+                                    <div class="date">17 May</div>
+                                    <div class="clock">12:00</div>
+                                </div>
+                                <div class="third-box__content">
+                                    <div class="box-content">
+                                        <span>Temperature: 13&deg;</span>
+                                        <span>Feels like: 10&deg;</span>
+                                    </div>
+                                    <div class="box-weather">
+                                        <span class="box-weather__title">Rain</span>
+                                        <i class="box-weather__icon"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="weather-locations">
                         <div class="weather-locations__title">
                             <span>Added Locations:</span>

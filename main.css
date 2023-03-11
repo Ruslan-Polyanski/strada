@@ -165,6 +165,7 @@ p {
 .weather-information {
     flex-basis: 50%;
     height: 390px;
+    margin-bottom: 44px;
     border-right: 1px solid #000;
 }
 
@@ -199,8 +200,14 @@ p {
 
 .weather-search__button {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 7px;
+    right: 10px;
+    border: none;
+    background: none;
+}
+
+.weather-search__button:hover {
+    cursor: pointer;
 }
 
 .weather-locations__sity ul {
@@ -210,6 +217,212 @@ p {
 
 .weather-locations__sity ul li {
     margin-bottom: 16px;
+    
+}
+
+.weather-locations__sity ul li:hover {
+    cursor: pointer;
+    color: gray;
+}
+
+.weather-search__icon {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url('./img/search.svg');
+    background-repeat: no-repeat;
+}
+
+.weather-deagre {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 82px;
+    padding: 20px 0 0 22px;
+}
+
+.weather-content__title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.weather-information input {
+    display: none;
+}
+
+.weather-information label {
+    display: inline-block;
+    text-align: center;
+    width: 33.3333333%;
+    height: 44px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    padding-top: 12px;
+    border-top: 1px solid #000;
+    position: relative;
+    bottom: -344px;
+    background-color: white;
+}
+
+.input-box {
+    margin-top: -44px;
+    min-height: 345px;
+}
+
+.weather-information {
+    position: relative;
+    overflow: hidden;
+    scroll-behavior: auto;
+}
+
+.weather-information label:hover {
+    cursor: pointer;
+    color: gray;
+}
+
+.weather-information input:checked + label {
+    background-color: #000;
+    color: white;
+}
+
+.first-input__box,
+.second-input__box,
+.third-input__box {
+    display: none;
+}
+
+#first-input:checked ~ .first-input__box {
+    display: block;
+}
+
+#second-input:checked ~ .second-input__box {
+    display: block;
+}
+
+#third-input:checked ~ .third-input__box {
+    display: block;
+}
+
+.weather-information input:checked + label:hover {
+    color: grey;
+}
+
+.second-input__title {
+    display: block;
+    margin: 33px 0 0 17px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.second-input__list {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 17px;
+}
+
+.second-input__item {
+    margin-top: 17px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.third-box {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.third-box__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.box-content {
+    padding-top: 5px;
+}
+
+.second-input__lable {
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+}
+
+.box-content span {
+    display: block;
+}
+
+.box-weather__icon {
+    display: block;
+    background-image: url(./img/icons8-rain-96\ 1.svg);
+    background-repeat: no-repeat;
+    width: 31px;
+    height: 31px;
+}
+
+.third-box__clock {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.third-box {
+    width: 265px;
+    height: 120px;
+    border: 1px solid #000;
+    margin: 0 auto;
+    margin-bottom: 9px;
+    margin-top: 7px;
+}
+
+.weather-icon {
+    display: flex;
+    justify-content: center;
+}
+
+.weather-icon i {
+    display: block;
+    background-image: url(./img/icons8-cloud-96\ 1.svg);
+    background-repeat: no-repeat;
+    width: 78px;
+    height: 59px;
+    margin-top: 40px;
+}
+
+.input-box .weather-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 100px 26px 0 11px;
+}
+
+.weather-content__icon i {
+    display: block;
+    background-image: url(./img/Shape.svg);
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
 }
 
 @media (max-width: 480px) {
