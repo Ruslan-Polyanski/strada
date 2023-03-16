@@ -1,6 +1,1 @@
-
-alert('Hello World');
-// Обычный комметарий на всю строку
-[1, 2].forEach(alert) // Комментарий на части строки
-
-/* ывапываA */
+console.log('Hello world')
