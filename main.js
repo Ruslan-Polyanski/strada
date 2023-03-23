@@ -1,20 +1,19 @@
 
 
-let login = prompt('Login', '');
-let password;
 
-if( login === 'Админ'){
-    password = prompt('Password', '');
-    if(password === 'Я главный'){
-        alert('Здравствуйте')
+function checkAge(age){
+    if(age >= 18){
+        return "You are welcom";
     } else {
-        alert('Неверный пароль')
+        return "You are not allowed";
     }
-} else if(login === ''){
-    alert('Отменено');
-} else {
-    alert('I dont know you');
 }
+
+let message = checkAge(19);
+
+console.log(message);
+
+
 
 
 
