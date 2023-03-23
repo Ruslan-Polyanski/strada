@@ -18,15 +18,14 @@ function calc(a, b, operation){
         return a + b;
     }
     if(operation === 'multi'){
-        let result = a > b ? a : b;
-        return result;
+        return a * b;
     }
     if(operation === 'subtract'){
         return a - b;
     }  
 }
 
-let result = calc(5, 1, "subtract");
+let result = calc(5, 1, "multi");
 
 console.log(result)
 
